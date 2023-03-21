@@ -1,57 +1,146 @@
+/*configurações de estilização do perfil do usuário do dashboard*/
+.perfil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+  box-sizing : border-box;
+}
+
+.user-information {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vh;
+  height: 70vh;
+  padding-bottom: 2vh;
+  border-radius: 1rem;
+  background: var(--Light-red);
+  z-index:2;
+  
+}
+
+.user-image {
+ 
+  padding: 3vh 0 3vh 2vh;
+}
+
+.user-image img {
+  width : 35vh;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.user-name .relatar-usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal 400 3vh var(--font-main);
+  padding: 0 auto 2vh auto;
+  color: rgb(184, 183, 183);
+}
+
+.user-name .title-first {
+  font: normal 300 7vh var(--font-main);
+  text-align: center;
+  padding-left  : 2vh;
+  letter-spacing: .03em;
+}
+
+
+.rastreamento {
+  display       : flex;
+  padding: 3vh;
+  align-items   : end;
+  bottom        : 15px;
+  width         : 100%;
+  height        : 40%;
+  border-radius : 0 0 1rem 1rem;
+  background    : var(--Dark-blue);
+  position      : relative;
+  z-index       : 1;
+}
+
+.rastreamento ul {
+  margin-left: 2vh;
+}
+
+.rastreamento li {
+  margin-top: 15px;
+  font-size : 18px;
+  cursor    : pointer;
+  color     : var(--Desaturated-blue);
+  transition: .5s ease all;
+}
+
+.rastreamento li:hover {
+  color: #fff;
+}
+
+.rastreamento ul li.active {
+  color: #fff;
+}
+
+
+
+
+/*itens da caixa grid */
+
 .grid-items-container {
-    display              : grid;
+    display: grid;
     grid-template-columns: repeat(3, 250px);
-    gap                  : 20px;
-    box-sizing           : border-box;
-    margin               : 5px;
+    gap: 2vh;
+    box-sizing : border-box;
+    margin: 5vh;
   }
   
   .item-card {
-    height       : 100%;
-    border-radius: 1em;
-    box-sizing   : border-box;
+    height: 100%;
+    border-radius: 1rem;
+    box-sizing: border-box;
   }
   
-  .overlap {
-    height       : 50px;
-    width        : 100%;
-    border-radius: 1em 1em 0 0;
-    position     : relative;
+  .sobrepor {
+    width: 100%;
+    height: 10vh;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
   }
   
   .informacoes {
-    height       : 170px;
-    width        : 100%;
-    background   : var(--Dark-blue);
-    border-radius: 1em;
-    position     : relative;
-    bottom       : 1em;
-    transition   : .5s ease all;
+     width: 100%;
+    height: 30vh;
+    background: var(--Dark-blue);
+    border-radius: 1rem;
+    position : relative;
+    bottom: 1rem;
+    transition: .5s ease all;
   }
   
   .informacoes::before {
-    content   : "";
-    background: url("../img/icon-ellipsis.svg") no-repeat no-repeat;
-    width     : 25px;
-    height    : 25px;
-    right     : 20px;
-    top       : 25px;
-    cursor    : pointer;
-    position  : absolute;
+     position : absolute;
+     width: 4vh;
+     height: 4vh;
+     right : 4vh;
+     top: 4vh;
+     background: url("../img/icon-ellipsis.svg") no-repeat no-repeat;
+     content: "";
+     cursor: pointer;
   }
   
   
   .informacoes:hover {
     background: var(--Desaturated-blue);
-    cursor    : pointer;
+    cursor: pointer;
   }
   
   .informacoes p {
     grid-area    : p;
-    padding-top  : 20px;
-    padding-left : 20px;
-    margin-bottom: 8px;
-    font-size    : 18px;
+    padding:2vh 2vh;
+    margin-bottom: 2vh;
+    font-size : 18px;
   }
   
   .informacoes h2 {
@@ -68,6 +157,77 @@
     font-size   : 16px;
     color       : rgb(184, 183, 183);
   }
+
+  /* Sobreposição de nos cards com css grid, com acréscimo de icons na borda */
+  .trabalho .sobrepor{
+    background-image: url("../img/icon-work.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--Light-red);
+  }
+  
+  .play .sobrepor {
+    background-image: url("../img/icon-play.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--Soft-blue);
+  }
+  
+  .study .sobrepor {
+    background-image: url("../img/icon-study.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--Light-red);
+  }
+  
+  .exercise .sobrepor {
+    background-image: url("../img/icon-exercise.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--Lime-green);
+  }
+  
+  .social .sobrepor {
+    background-image : url("../img/icon-social.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+  }
+  
+  .self-care .sobrepor {
+    background-image : url("../img/icon-self-care.svg");
+    background-position:right;
+    background-repeat: no-repeat;
+    background-color : var(--Soft-orange);
+  }
+
+  @media(max-width: 900px) {
+    .perfil {
+      margin: 15px;
+    }
+  
+    .user-information {
+      display    : flex;
+      align-items: center;
+      height     : 60vh;
+      width      : 100%;
+    }
+  
+    .rastreamento {
+      height: 100px;
+    }
+  
+    .rastreamento>div {
+      margin: 0 auto;
+      margin-bottom: 2vh;
+    }
+  
+    .rastreamento ul {
+      display: flex;
+      gap : 2vh;
+    }
+  }
+  
   
   @media(max-width: 1140px) {
     .grid-items-container {
@@ -78,7 +238,7 @@
   @media(max-width: 900px) {
     .grid-items-container {
       grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
-      margin               : 15px;
+      margin  : 15px;
     }
   
     .informacoes {

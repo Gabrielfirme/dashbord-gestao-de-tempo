@@ -1,5 +1,4 @@
-@import url(grid-time.css);
-@import url(overlap-gri.css);
+
 @import url(grid-card.css);
 *{
     padding: 0;
@@ -13,36 +12,37 @@
 :root {
     /*principais cores*/
  
-    --Blue       : hsl(246, 80%, 60%);
-    --Light-red  : hsl(15, 100%, 70%);
-    --Soft-blue  : hsl(195, 74%, 62%);
-    --Light-red  : hsl(348, 100%, 68%);
-    --Lime-green : hsl(145, 58%, 55%);
-    --Violet     : hsl(264, 64%, 52%);
+    --Blue: hsl(246, 80%, 60%);
+    --Light-red : hsl(15, 100%, 70%);
+    --Soft-blue : hsl(195, 74%, 62%);
+    --Light-red : hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
     --Soft-orange: hsl(43, 84%, 65%);
 
 
     /* cores neutras */
-    --Very-dark-blue  : hsl(226, 43%, 10%);
+    --Very-dark-blue  : hsla(276, 100%, 88%, 0.863);
     --Dark-blue       : hsl(235, 46%, 20%);
     --Desaturated-blue: hsl(235, 45%, 61%);
     --Pale-Blue       : hsl(236, 100%, 87%);
+    
+    /*fonte usada em toda página*/
+    --font-main:'Rubik', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-img {
-    display  : block;
+.imagem-usuario {
+    display: block;
     max-width: 100%;
 }
 
 ul {
     list-style: none;
 }
-
-
 
 body {
     margin    : 0px;
