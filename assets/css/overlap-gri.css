@@ -1,0 +1,41 @@
+.trabalho .overlap{
+    background-image   : url("../img/icon-work.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Light-red);
+  }
+  
+  .play .overlap {
+    background-image   : url("../img/icon-play.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Soft-blue);
+  }
+  
+  .study .overlap {
+    background-image   : url("../img/icon-study.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Light-red);
+  }
+  
+  .exercise .overlap {
+    background-image   : url("../img/icon-exercise.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Lime-green);
+  }
+  
+  .social .overlap {
+    background-image   : url("../img/icon-social.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Violet);
+  }
+  
+  .self-care .overlap {
+    background-image   : url("../img/icon-self-care.svg");
+    background-position: right;
+    background-repeat  : no-repeat;
+    background-color   : var(--Soft-orange);
+  }
