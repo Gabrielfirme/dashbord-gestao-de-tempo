@@ -1,4 +1,4 @@
-# dashbord-gestao-de-tempo
+# Dashbord Gestão De Tempo
 
 ![dashboard-tumblr](https://user-images.githubusercontent.com/94994830/227013587-9b1f8225-465f-4740-bb2f-9365a38f80dd.jpg)
 
