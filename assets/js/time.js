@@ -8,9 +8,9 @@ function handleTimeTrackingInitial(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
             <p>${dataJSON[i].title}</p>
-            <h2>${dataJSON[i].timeframes.dia.current}hrs</h2>
+            <h2>${dataJSON[i].framestime.dia.atual}hrs</h2>
             <span>
-               Última Dia - ${dataJSON[i].timeframes.dia.previous}hrs
+               Última Dia - ${dataJSON[i].framestime.dia.anterior}hrs
             </span>
         `;
     });
@@ -21,9 +21,9 @@ function handleTimeTrackingWeekly(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
             <p>${dataJSON[i].title}</p>
-            <h2>${dataJSON[i].timeframes.semana.current}hrs</h2>
+            <h2>${dataJSON[i].framestime.semana.atual}hrs</h2>
             <span>
-                Última Semana - ${dataJSON[i].timeframes.semana.previous}hrs
+                Última Semana - ${dataJSON[i].framestime.semana.anterior}hrs
             </span>
         `;
     });
@@ -34,9 +34,9 @@ function handleTimeTrackingMonthly(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
             <p>${dataJSON[i].title}</p>
-            <h2>${dataJSON[i].timeframes.mes.current}hrs</h2>
+            <h2>${dataJSON[i].framestime.mes.atual}hrs</h2>
             <span>
-                Último Mês - ${dataJSON[i].timeframes.mes.previous}hrs
+                Último Mês - ${dataJSON[i].framestime.mes.anterior}hrs
             </span>
         `;
     });
@@ -70,5 +70,5 @@ btnTimeTracking.forEach((btn) => {
     btn.addEventListener('click', handleTimeTracking);
 });
 
-// Inicializa como DIÁRIO por padrão
+// O padrão de inicialização do dashboard de tempo se dará pelo tempo diário
 initTimeTracking('dia');

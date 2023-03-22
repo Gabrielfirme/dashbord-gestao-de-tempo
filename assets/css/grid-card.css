@@ -8,7 +8,7 @@
   box-sizing : border-box;
 }
 
-.user-information {
+.information-user {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,18 +22,17 @@
   
 }
 
-.user-image {
- 
+.image-usuario-container {
   padding: 3vh 0 3vh 2vh;
 }
 
-.user-image img {
+.image-usuario-container img {
   width : 35vh;
   border-radius: 50%;
   border: 3px solid #fff;
 }
 
-.user-name .relatar-usuario {
+.name-user .relatar-usuario {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +41,7 @@
   color: rgb(184, 183, 183);
 }
 
-.user-name .title-first {
+.name-user .title-first {
   font: normal 300 7vh var(--font-main);
   text-align: center;
   padding-left  : 2vh;
@@ -88,7 +87,7 @@
 
 /*itens da caixa grid */
 
-.grid-items-container {
+.itens-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 250px);
     gap: 2vh;
@@ -166,35 +165,35 @@
     background-color: var(--Light-red);
   }
   
-  .play .sobrepor {
+  .jogos-games .sobrepor {
     background-image: url("../img/icon-play.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-color: var(--Soft-blue);
   }
   
-  .study .sobrepor {
+  .estudos .sobrepor {
     background-image: url("../img/icon-study.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-color: var(--Light-red);
   }
   
-  .exercise .sobrepor {
+  .esportes .sobrepor {
     background-image: url("../img/icon-exercise.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-color: var(--Lime-green);
   }
   
-  .social .sobrepor {
+  .redes-sociais .sobrepor {
     background-image : url("../img/icon-social.svg");
     background-position: right;
     background-repeat: no-repeat;
     background-color: var(--Violet);
   }
   
-  .self-care .sobrepor {
+  .cuidados-pessoais .sobrepor {
     background-image : url("../img/icon-self-care.svg");
     background-position:right;
     background-repeat: no-repeat;
@@ -207,14 +206,15 @@
     }
   
     .user-information {
-      display    : flex;
+      width: 100%;
+      display: flex;
       align-items: center;
-      height     : 60vh;
-      width      : 100%;
+      height: 60vh;
+      
     }
   
     .rastreamento {
-      height: 100px;
+      height: 1vh;
     }
   
     .rastreamento>div {
@@ -226,16 +226,6 @@
       display: flex;
       gap : 2vh;
     }
-  }
-  
-  
-  @media(max-width: 1140px) {
-    .grid-items-container {
-      grid-template-columns: repeat(3, 45vh);
-    }
-  }
-  
-  @media(max-width: 900px) {
     .grid-items-container {
       grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
       margin  : 15px;
@@ -251,9 +241,16 @@
   
     .informacoes p,
     .informacoes span {
-      font-size: 20px;
+      font-size: 4vh;
     }
   }
+
+  @media(max-width: 1140px) {
+    .grid-items-container {
+      grid-template-columns: repeat(3, 45vh);
+    }
+  }
+  
   
   @media(max-width:500px) {
     .informacoes {
@@ -264,8 +261,8 @@
     }
   
     .informacoes span {
-      font-size     : 18px;
-      padding-bottom: 10px;
+      font-size: 4vh;
+      padding-bottom: 1vh;
     }
   }
   
