@@ -1,104 +1,104 @@
 [
     {
       "title": "Trabalho",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 5,
-          "anterior": 5
+          "current": 5,
+          "previous": 5
         },
         "semana": {
-          "atual": 35,
-          "anterior": 35
+          "current": 35,
+          "previous": 35
         },
         "mes": {
-          "atual": 140,
-          "anterior": 140
+          "current": 140,
+          "previous": 140
         }
       }
     },
     {
       "title": "Jogos / Games",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 1,
-          "anterior": 1
+          "current": 1,
+          "previous": 1
         },
         "semana": {
-          "atual": 7,
-          "anterior": 7
+          "current": 7,
+          "previous": 7
         },
         "mes": {
-          "atual": 28,
-          "anterior": 28
+          "current": 28,
+          "previous": 28
         }
       }
     },
     {
       "title": "Estudos ",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 5,
-          "anterior": 5
+          "current": 5,
+          "previous": 5
         },
         "semana": {
-          "atual": 35,
-          "anterior": 35
+          "current": 35,
+          "previous": 35
         },
         "mes": {
-          "atual": 140,
-          "anterior": 140
+          "current": 140,
+          "previous": 140
         }
       }
     },
     {
       "title": "Esportes",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 1,
-          "anterior": 1
+          "current": 1,
+          "previous": 1
         },
         "semana": {
-          "atual": 7,
-          "anterior": 7
+          "current": 7,
+          "previous": 7
         },
         "mes": {
-          "atual": 28,
-          "anterior": 28
+          "current": 28,
+          "previous": 28
         }
       }
     },
     {
       "title": "Redes Sociais",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 3,
-          "anterior": 3
+          "current": 3,
+          "previous": 3
         },
         "semana": {
-          "atual": 21,
-          "anterior": 21
+          "current": 21,
+          "previous": 21
         },
         "mes": {
-          "atual": 84,
-          "anterior": 84
+          "current": 84,
+          "previous": 84
         }
       }
     },
     {
       "title": "Higiene Pessoal",
-      "framestime": {
+      "timeframes": {
         "dia": {
-          "atual": 2,
-          "anterior": 2
+          "current": 2,
+          "previous": 2
         },
         "semana": {
-          "atual": 14,
-          "anterior": 14
+          "current": 14,
+          "previous": 14
 
         },
         "mes": {
-          "atual": 56,
-          "anterior": 56
+          "current": 56,
+          "previous": 56
         }
       }
     }

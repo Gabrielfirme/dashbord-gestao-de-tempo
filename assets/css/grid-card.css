@@ -1,3 +1,4 @@
+
 /*configurações de estilização do perfil do usuário do dashboard*/
 .perfil {
   display: flex;
@@ -226,6 +227,9 @@
       display: flex;
       gap : 2vh;
     }
+
+
+  @media(max-width: 900px){
     .grid-items-container {
       grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
       margin  : 15px;
@@ -245,6 +249,8 @@
     }
   }
 
+  }
+
   @media(max-width: 1140px) {
     .grid-items-container {
       grid-template-columns: repeat(3, 45vh);
@@ -253,6 +259,10 @@
   
   
   @media(max-width:500px) {
+    .box{
+      display: flex;
+      flex-direction: column;
+    }
     .informacoes {
       grid-template:
         "p p"
