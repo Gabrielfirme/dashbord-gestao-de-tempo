@@ -3,7 +3,7 @@ const url = './data/data.json';
 const informationsField = document.querySelectorAll('.informacoes');
 const btnTimeTracking = document.querySelectorAll('.rastreamento li');
 
-// Renderiza as informações de rastreamento de tempo DIÁRIO
+// Processamento de informações do rastreamento de tempo por Dia
 function handleTimeTrackingInitial(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
@@ -16,7 +16,7 @@ function handleTimeTrackingInitial(dataJSON) {
     });
 }
 
-// Renderiza as informações de rastreamento de tempo SEMANAL
+// Processamento de informações do rastreamento de tempo por semana
 function handleTimeTrackingWeekly(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
@@ -29,7 +29,7 @@ function handleTimeTrackingWeekly(dataJSON) {
     });
 }
 
-// Renderiza as informações de rastreamento de tempo MENSAL
+// Processamento de informações do rastreamento de tempo por Mês
 function handleTimeTrackingMonthly(dataJSON) {
     informationsField.forEach((information, i) => {
         informationsField[i].innerHTML = `
@@ -42,9 +42,7 @@ function handleTimeTrackingMonthly(dataJSON) {
     });
 }
 
-// Inicializa a renderização dos elementos
-// de acordo com o retorno do click do usuário
-// no escopo do rastreamento
+// Dá inicio ao processamento de elementos de acordo com o click do usuário, por meio desta função assíncrona  
 async function initTimeTracking(targetBtn) {
     const dataResponse = await fetch(url);
     const dataJSON = await dataResponse.json();
@@ -54,8 +52,7 @@ async function initTimeTracking(targetBtn) {
     else if (targetBtn === 'mes') handleTimeTrackingMonthly(dataJSON);
 }
 
-// Captura o escopo do rastreamento de 
-// acordo com a escolha do usuário
+
 function handleTimeTracking(event) {
     btnTimeTracking.forEach((btn) => {
         btn.classList.remove('active');
